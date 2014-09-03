@@ -109,3 +109,15 @@ D, [2014-09-03T16:44:59.016740 #3580] DEBUG -- : REQUESTING PAGE: GET / with {} 
 D, [2014-09-03T16:44:59.021056 #3580] DEBUG -- : REQUESTING PAGE: GET /tablero with {"jugador1"=>"Daniel", "jugador2"=>"Felipe", "jugar"=>"jugar"} and HTTP headers {"HTTP_REFERER"=>"/"}
 D, [2014-09-03T16:44:59.033965 #3580] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
 D, [2014-09-03T16:44:59.041378 #3580] DEBUG -- : REQUESTING PAGE: GET /tablero with {"jugador1"=>"Daniel", "jugador2"=>"Felipe", "jugar"=>"jugar"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-09-03T17:00:32.664142 #3603] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-09-03T17:00:32.737259 #3603] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-09-03T17:00:32.742391 #3603] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-09-03T17:00:32.748701 #3603] DEBUG -- : REQUESTING PAGE: GET /tablero with {"jugador1"=>"Nadal", "jugador2"=>"Federer", "jugar"=>"jugar"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-09-03T17:00:32.760697 #3603] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-09-03T17:00:32.768973 #3603] DEBUG -- : REQUESTING PAGE: GET /tablero with {"jugador1"=>"Daniel", "jugador2"=>"Felipe", "jugar"=>"jugar"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-09-03T17:00:32.797372 #3603] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-09-03T17:00:32.801908 #3603] DEBUG -- : REQUESTING PAGE: GET /tablero with {"jugador1"=>"Nadal", "jugador2"=>"Federer", "jugar"=>"jugar"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-09-03T17:00:32.808924 #3603] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-09-03T17:00:32.834938 #3603] DEBUG -- : REQUESTING PAGE: GET /tablero with {"jugador1"=>"Federer", "jugador2"=>"Nadal", "jugar"=>"jugar"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-09-03T17:00:32.841377 #3603] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-09-03T17:00:32.854420 #3603] DEBUG -- : REQUESTING PAGE: GET /tablero with {"jugador1"=>"Daniel", "jugador2"=>"Felipe", "jugar"=>"jugar"} and HTTP headers {"HTTP_REFERER"=>"/"}

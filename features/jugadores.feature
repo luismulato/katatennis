@@ -19,7 +19,7 @@ Característica: Visualizar jugadores
     Entonces debo visualizar en el titulo "Daniel vs Felipe"
 
 #
-Esquema del escenario: Ingresar jugadores
+  Esquema del escenario: Ingresar jugadores
     Dado que ingreso a la pagina de inicio
     Y que el jugador1 es <jugador1>
 	Y que el jugador2 es <jugador2>
@@ -32,20 +32,6 @@ Esquema del escenario: Ingresar jugadores
 
 
 
-
-  Escenario: Visualizar jugador1
-    Dado que ingreso a la pagina de inicio
-    Y que el jugador1 es "Daniel"
-	Y que el jugador2 es "Felipe"
-    Cuando inicio el juego
-    Entonces debo visualizar como jugador1 "Daniel"
-
-  Escenario: Visualizar jugador2
-    Dado que ingreso a la pagina de inicio
-    Y que el jugador1 es "Daniel"
-	Y que el jugador2 es "Felipe"
-    Cuando inicio el juego
-    Entonces debo visualizar como jugador2 "Felipe"
 
   Escenario: Visualizar jugadores
     Dado que ingreso a la pagina de inicio
