@@ -5,7 +5,7 @@ Característica: Visualizar jugadores
   Quiero definir los jugadores del partido
 
   Escenario: Ingresar jugadores
-    Dado ingreso a la pagina de inicio
+    Dado que ingreso a la pagina de inicio
     Y que el jugador1 es "Nadal"
 	Y que el jugador2 es "Federer"
     Cuando inicio el juego

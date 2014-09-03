@@ -5,5 +5,9 @@ configure do
 end
 
 get '/' do
-	erb :index
+  erb :index
+end
+
+get '/tablero' do
+  erb :tablero  
 end
