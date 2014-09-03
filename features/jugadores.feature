@@ -18,20 +18,28 @@ Característica: Visualizar jugadores
     Cuando inicio el juego
     Entonces debo visualizar en el titulo "Daniel vs Felipe"
 
-  Escenario: Visualizar jugador1
+#
+  Esquema del escenario: Ingresar jugadores
+    Dado que ingreso a la pagina de inicio
+    Y que el jugador1 es <jugador1>
+	Y que el jugador2 es <jugador2>
+    Cuando inicio el juego
+    Entonces debo visualizar en el titulo <titulo>
+  Ejemplos:
+    | jugador1 | jugador2 | titulo |
+    | "Nadal" | "Federer" | "Nadal vs Federer"|
+    | "Federer" | "Nadal" | "Federer vs Nadal"|
+
+
+
+
+  Escenario: Visualizar jugadores
     Dado que ingreso a la pagina de inicio
     Y que el jugador1 es "Daniel"
 	Y que el jugador2 es "Felipe"
     Cuando inicio el juego
     Entonces debo visualizar como jugador1 "Daniel"
-
-  Escenario: Visualizar jugador2
-    Dado que ingreso a la pagina de inicio
-    Y que el jugador1 es "Daniel"
-	Y que el jugador2 es "Felipe"
-    Cuando inicio el juego
-    Entonces debo visualizar como jugador2 "Felipe"
-
+    Y  debo visualizar como jugador2 "Felipe"
 
 
 
