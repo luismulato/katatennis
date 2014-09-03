@@ -22,9 +22,15 @@ Cuando(/^inicio el juego$/) do
   click_button("jugar")
 end
 
-Entonces(/^debo visualizar "(.*?)"$/) do |arg1|
-  last_response.body.should =~ /#{arg1}/m
+Entonces(/^debo visualizar en el titulo "(.*?)"$/) do |arg1|
+  last_response.body.should =~ /<title>#{arg1}<\/title>/m
 end
+
+Entonces(/^debo visualizar como jugador(\d+) "(.*?)"$/) do |arg1, arg2|
+  last_response.body.should =~ /<div data-name="jugador#{arg1}-#{arg2}"/m
+end
+
+
 
 
 
