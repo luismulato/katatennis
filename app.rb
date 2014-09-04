@@ -12,7 +12,7 @@ end
 get '/tablero' do
   @@tablero = Tablero.new
   @@puntos_jugador1 = @@tablero.get_puntos_jugador_1
-  @@puntos_jugador2 = 0 
+  @@puntos_jugador2 = @@tablero.get_puntos_jugador_2
 
   @@jugador1 = params["jugador1"]
   @@jugador2 = params["jugador2"]
@@ -21,10 +21,12 @@ get '/tablero' do
 end
 
 get '/jugador1' do
-  @@puntos_jugador1 = 15 + @@puntos_jugador1
-  if @@puntos_jugador1 == 45
-    @@puntos_jugador1 = 40
-  end
+  @@tablero.punto_jugador_1
+
+  @@puntos_jugador1 = @@tablero.get_puntos_jugador_1
+#  if @@puntos_jugador1 == 45
+#    @@puntos_jugador1 = 40
+#  end
 
   erb :tablero  
 end
