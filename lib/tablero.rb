@@ -1,33 +1,28 @@
 class Tablero
 
+  
+
   def initialize 
-    @puntos_j1 = 0
-    @puntos_j2 = 0
+    @puntos = [0,15,30,40]
+    @index_j1 = 0
+    @index_j2 = 0
   end
  
   def get_puntos_jugador_1
-    @puntos_j1
+    @puntos[@index_j1]
   end
 
   def get_puntos_jugador_2
-    @puntos_j2	
+    @puntos[@index_j2]	
   end
 
 
   def puntuar_jugador_1
-    @puntos_j1 = puntuar_jugador @puntos_j1
+    @index_j1 += 1
   end
 
   def puntuar_jugador_2
-    @puntos_j2 = puntuar_jugador @puntos_j2
+    @index_j2 += 1
   end 
-
-  def puntuar_jugador puntos
-    puntos = 15 + puntos
-    if puntos == 45
-      puntos = 40
-    end
-    puntos
-  end
-
+  
 end
