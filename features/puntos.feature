@@ -21,6 +21,24 @@ Característica: Visualizar puntos
 	Y jugador2 anota
     Entonces debo visualizar en el marcador "0-15"
 
+  Escenario: Marcador 15-0 y Jugador1 marca un punto
+    Dado que ingreso a la pagina de inicio
+    Cuando ha iniciado un juego
+	Y jugador1 anota
+	Y jugador1 anota
+    Entonces debo visualizar en el marcador "30-0"
+
+  @to_do
+  Escenario: Marcador 30-0 y Jugador1 marca un punto
+    Dado que ingreso a la pagina de inicio
+    Cuando ha iniciado un juego
+	Y jugador1 anota
+	Y jugador1 anota
+	Y jugador1 anota
+    Entonces debo visualizar en el marcador "40-0"
+
+
+
 
 
 
