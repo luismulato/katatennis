@@ -50,7 +50,14 @@ describe Tablero do
     @tablero.get_puntos_jugador_2.should == 40
   end
 
-  it "partido va 15-0, punto jugador2 marcador 15-15"
+  it "partido va 15-0, punto jugador2 marcador 15-15" do
+    @tablero.puntuar_jugador_1
+
+    @tablero.puntuar_jugador_2
+
+    @tablero.get_puntos_jugador_1 == 15
+    @tablero.get_puntos_jugador_2 == 15
+  end
   it "partido va 15-15, punto jugador2 marcador 15-30" 
   it "partido va 0-15, punto jugador1 marcador 15-15" 
   it "partido va 15-15, punto jugador1 marcador 30-15" 
