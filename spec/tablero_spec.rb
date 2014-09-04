@@ -1,9 +1,17 @@
 require './lib/tablero'
 
+class TableroMock < Tablero
+  def set_match_status index_j1,index_j2
+    @index_j1 = index_j1
+    @index_j2 = index_j2
+  end
+end
+
+
 describe Tablero do
 
   before { 
-    @tablero = Tablero.new
+    @tablero = TableroMock.new
   }
 
   it "validar marcador inicial 0-0" do    
@@ -51,7 +59,7 @@ describe Tablero do
   end
 
   it "partido va 15-0, punto jugador2 marcador 15-15" do
-    @tablero.puntuar_jugador_1
+    @tablero.set_match_status 1,0
 
     @tablero.puntuar_jugador_2
 
