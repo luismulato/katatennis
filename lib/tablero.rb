@@ -2,6 +2,7 @@ class Tablero
 
   def initialize 
     @puntos_j1 = 0
+    @puntos_j2 = 0
   end
  
   def get_puntos_jugador_1
@@ -9,7 +10,7 @@ class Tablero
   end
 
   def get_puntos_jugador_2
-    0	
+    @puntos_j2	
   end
 
   def punto_jugador_1
@@ -18,5 +19,10 @@ class Tablero
       @puntos_j1 = 40
     end
   end
+
+  def punto_jugador_2
+    @puntos_j2 = 15
+  end 
+
 
 end
