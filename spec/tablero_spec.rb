@@ -16,6 +16,7 @@ describe Tablero do
   end
 
   it "validar marcador inicial 0-0" do    
+    @tablero.get_puntos_jugador_1.should == 0
 	  @tablero.get_puntos_jugador_2.should == 0
   end
 
@@ -37,19 +38,19 @@ describe Tablero do
 	  @tablero.get_puntos_jugador_1.should == 40
   end
 
-  it "partido va 0-0, punto jugador2 marcador 0-15" do
-    @tablero.punto_jugador_1
-    @tablero.punto_jugador_1
-    @tablero.punto_jugador_1
-	  @tablero.get_puntos_jugador_1.should == 40
-  end
-
   it "partido va 0-0, punto jugador2 es igual a 15" do
     @tablero.punto_jugador_2
     @tablero.get_puntos_jugador_2.should == 15
   end
 
-  it "partido va 15-0, punto jugador2 marcador 15-15" 
+  it "partido va 0-0, punto jugador2 marca 3 puntos" do
+    @tablero.punto_jugador_2
+    @tablero.punto_jugador_2
+    @tablero.punto_jugador_2
+    @tablero.get_puntos_jugador_2.should == 40
+  end
+
+  it "partido va 15-0, punto jugador2 marcador 15-15"
   it "partido va 15-15, punto jugador2 marcador 15-30" 
   it "partido va 0-15, punto jugador1 marcador 15-15" 
   it "partido va 15-15, punto jugador1 marcador 30-15" 
