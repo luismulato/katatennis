@@ -21,32 +21,32 @@ describe Tablero do
   end
 
   it "Marcar un punto jugador1" do
-    @tablero.punto_jugador_1
+    @tablero.puntuar_jugador_1
 	  @tablero.get_puntos_jugador_1.should == 15
   end
 
   it "Marcar dos puntos jugador1" do
-    @tablero.punto_jugador_1
-    @tablero.punto_jugador_1
+    @tablero.puntuar_jugador_1
+    @tablero.puntuar_jugador_1
 	  @tablero.get_puntos_jugador_1.should == 30
   end
 
   it "Marcar tres puntos jugador1" do
-    @tablero.punto_jugador_1
-    @tablero.punto_jugador_1
-    @tablero.punto_jugador_1
+    @tablero.puntuar_jugador_1
+    @tablero.puntuar_jugador_1
+    @tablero.puntuar_jugador_1
 	  @tablero.get_puntos_jugador_1.should == 40
   end
 
   it "partido va 0-0, punto jugador2 es igual a 15" do
-    @tablero.punto_jugador_2
+    @tablero.puntuar_jugador_2
     @tablero.get_puntos_jugador_2.should == 15
   end
 
   it "partido va 0-0, punto jugador2 marca 3 puntos" do
-    @tablero.punto_jugador_2
-    @tablero.punto_jugador_2
-    @tablero.punto_jugador_2
+    @tablero.puntuar_jugador_2
+    @tablero.puntuar_jugador_2
+    @tablero.puntuar_jugador_2
     @tablero.get_puntos_jugador_2.should == 40
   end
 

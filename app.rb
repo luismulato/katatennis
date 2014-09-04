@@ -21,7 +21,7 @@ get '/tablero' do
 end
 
 get '/jugador1' do
-  @@tablero.punto_jugador_1
+  @@tablero.puntuar_jugador_1
 
   @@puntos_jugador1 = @@tablero.get_puntos_jugador_1
 #  if @@puntos_jugador1 == 45

@@ -14,11 +14,11 @@ class Tablero
   end
 
 
-  def punto_jugador_1
+  def puntuar_jugador_1
     @puntos_j1 = puntuar_jugador @puntos_j1
   end
 
-  def punto_jugador_2
+  def puntuar_jugador_2
     @puntos_j2 = puntuar_jugador @puntos_j2
   end 
 
