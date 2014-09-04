@@ -13,19 +13,21 @@ class Tablero
     @puntos_j2	
   end
 
+
   def punto_jugador_1
-    @puntos_j1 = 15 + @puntos_j1
-    if @puntos_j1 == 45
-      @puntos_j1 = 40
-    end
+    @puntos_j1 = puntuar_jugador @puntos_j1
   end
 
   def punto_jugador_2
-    @puntos_j2 = 15 + @puntos_j2
-    if @puntos_j2 == 45
-      @puntos_j2 = 40
-    end
+    @puntos_j2 = puntuar_jugador @puntos_j2
   end 
 
+  def puntuar_jugador puntos
+    puntos = 15 + puntos
+    if puntos == 45
+      puntos = 40
+    end
+    puntos
+  end
 
 end
